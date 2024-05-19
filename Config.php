@@ -3,8 +3,9 @@ $servername="localhost";
 $username="root";
 $password="";
 $db="kingdomofebooks";
+$port=3307;
 
-$conn=new mysqli($servername,$username,$password,$db);
+$conn=new mysqli($servername,$username,$password,$db,$port);
 
 if($conn->connect_error){
     die("Connection Failed: ".$conn->connect_error);
